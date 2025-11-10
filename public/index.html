@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>OmniConvert — Free Online Calculators (No Signup)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fast, simple calculators for everyday tasks: text, dates, percentages, images. No signup.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header>
+  <h1>OmniConvert</h1>
+  <p>Free, fast calculators. No signup. No tracking before consent.</p>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/disclaimer.html">Disclaimer</a>
+    <a href="/manage-cookies" id="manageCookies">Manage cookies</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Popular tools</h2>
+  <ul class="grid">
+    <li><a href="/calculators/character-counter.html">Character Counter</a></li>
+    <li><a href="/calculators/word-counter.html">Word Counter</a></li>
+    <li><a href="/calculators/percentage-add.html">Add/Subtract Percentage</a></li>
+    <li><a href="/calculators/date-diff.html">Days Between Dates</a></li>
+    <li><a href="/calculators/url-encoder.html">URL Encoder/Decoder</a></li>
+    <li><a href="/calculators/px-rem.html">PX↔REM Converter</a></li>
+    <li><a href="/calculators/aspect-ratio.html">Aspect Ratio</a></li>
+    <li><a href="/calculators/case-converter.html">Case Converter</a></li>
+    <li><a href="/calculators/reading-time.html">Reading Time Estimator</a></li>
+    <li><a href="/calculators/file-size-converter.html">File Size Converter</a></li>
+    <li><a href="/calculators/rgb-hex.html">RGB↔HEX Converter</a></li>
+    <li><a href="/calculators/round-decimals.html">Round Decimals</a></li>
+    <li><a href="/calculators/slugify.html">Slugify</a></li>
+    <li><a href="/calculators/remove-duplicates.html">Remove Duplicates</a></li>
+    <li><a href="/calculators/json-formatter.html">JSON Formatter</a></li>
+    <li><a href="/calculators/html-escape.html">HTML Escape/Unescape</a></li>
+    <li><a href="/calculators/iso-week-number.html">ISO Week Number</a></li>
+    <li><a href="/calculators/cm-inch-converter.html">CM↔Inch Converter</a></li>
+    <li><a href="/calculators/kg-lb-converter.html">KG↔LB Converter</a></li>
+    <li><a href="/calculators/dpi-calculator.html">DPI Calculator</a></li>
+  </ul>
+</main>
+
+<footer>
+  <small>© <span id="year"></span> OmniConvert · <a href="/privacy.html">Privacy</a> · <a href="/disclaimer.html">Disclaimer</a> ·
+    Some links may be <span title="We may earn a small commission at no cost to you.">sponsored</span>.
+  </small>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('manageCookies')?.addEventListener('click', function(e){
+    e.preventDefault();
+    alert('Cookie preferences will appear here after we enable the consent banner.');
+  });
+</script>
+</body>
+</html>
